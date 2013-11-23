@@ -22,7 +22,7 @@ sudo make install
 rm -R ~/tmp/xrectsel
 ```
 
-Make custom keyboard shortcut for capturing region of the screen ( You can make this on Uubntu via the "Keyboard" app). The the command that you'll assign for the shortcut would be:
+Make custom keyboard shortcut for capturing region of the screen ( You can make this on Ubuntu via the "Keyboard" app). The the command that you'll assign for the shortcut would be:
 
 ```bash
 bash /home/<<your-username>>/scripts/byzanz-record-region
