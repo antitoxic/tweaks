@@ -1,0 +1,42 @@
+#!/bin/bash
+RECORDING_FILENAME_BASE="gif_screencast_"
+SAVE_DIR="/home/$(whoami)/Pictures/"
+pid1=$(ps aux | grep ' byzanz-record ' | grep -v grep | awk "{ print \$2 }")
+if [[ ! -z "$pid1" ]]; then
+	kill ${pid1}
+	pid2=$(ps aux | grep ' byzanz-record-region ' | grep -v grep | awk "{ print \$2 }")
+	kill ${pid2}
+	exit
+fi
+
+# Delay before starting
+DELAY=0
+
+# Sound notification to let one know when recording is about to start (and ends)
+beep() {
+    paplay /usr/share/sounds/KDE-Im-Irc-Event.ogg &
+}
+
+# Duration and output file
+if [ $# -gt 0 ]; then
+    D="--duration=$@"
+else
+    LATEST_RECORDING_NUM=$(ls "$SAVE_DIR" | grep "$RECORDING_FILENAME_BASE" | sed s/"$RECORDING_FILENAME_BASE"// | sed s/.gif// | sort -rn | head -1)
+    RECORDING_FILENAME="$RECORDING_FILENAME_BASE"$((LATEST_RECORDING_NUM+1))
+    RECORDING_PATH="$SAVE_DIR$RECORDING_FILENAME.gif"
+    echo Default recording duration 8000s to "$RECORDING_PATH"
+
+    D="--duration=8000 $RECORDING_PATH"
+fi
+
+# xrectsel from https://github.com/lolilolicon/FFcast2/blob/master/xrectsel.c
+ARGUMENTS=$(xrectsel "--x=%x --y=%y --width=%w --height=%h") || exit -1
+
+echo Delaying $DELAY seconds. After that, byzanz will start
+for (( i=$DELAY; i>0; --i )) ; do
+    echo $i
+    sleep 1
+done
+beep
+byzanz-record --verbose --delay=0 ${ARGUMENTS} $D
+beep
