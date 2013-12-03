@@ -1,4 +1,19 @@
 ## Goals
+ - touch pad 2 finger scrolling in both horizontal and vertical
+ - Have the title bar merged with the notification bar
+ - Hide top menu items (File, Options, Tools, Help...)
+ - screenshot tool to work
+ - Alt+tab drag'n'drop
+ - Must have "aero-snap" for at least full screen + left/right sides
+ - Must support AMD video card (amd catalyst)
+ - fontconfig-infinality - nice antialiasing for both native and java gui
+ - Sound, Video, Skype - all working,
+ - Skype notifications working properly
+ - Non-recursive Filtering when typing
+ - Switching monitor works nicely
+ - set git settings, name, email
+ - add appropriate private keys
+ - add ssh config
  - Have 2 browser profiles, one for work, on for personal usage. Have shorcuts to open them side by side
  - Have well antialiased fonts in both native and java GUI
  - Have a way to sync files between partitions, Linux, Windows
@@ -9,13 +24,13 @@
  - Jetbrains WebStorm
  - Jetbrains PyCharrn
  - Easy way for skype to be integrated
- - Have the title bar merged with the notification bar
- - Hide top menu items (File, Options, Tools, Help...)
  - Easy way to launch applications which includes filtering by keyboard
  - Easy way to switch between applications which includes filtering by keyboard
  - Ease way to drag and drop files between windows
  - Shortcut to start common virtual machine (windows xp)
- - 
+ - Autosave screenshots to file, easy way to make screenshots of areas of the screen
+ - be able to list all files that a package installed 
+
 
 ## Packages
  - __4kvideodownloader__    Download youtube playlists as mp3s
