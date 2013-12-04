@@ -15,6 +15,10 @@ dconf-editor - to visual browse availabe configuration - dont use it to change i
 https://wiki.archlinux.org/index.php/GNOME
 http://www.fandigital.com/2012/06/change-theme-command-line-gnome.html
 
+```
+sudo yum remove libreoff* brasero rhythmbox shotwell simple-scan aisleriot
+```
+
 
 ### Titlebar
 Maximus Extension: https://extensions.gnome.org/extension/354/maximus/ + https://bitbucket.org/mathematicalcoffee/maximus-gnome-shell-extension/issue/23/please-upgrade-to-38#comment-3581856
