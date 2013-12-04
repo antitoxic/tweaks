@@ -129,7 +129,8 @@ gsettings set org.gnome.desktop.interface icon-theme "Moka"
 
 gsettings set org.gnome.desktop.screensaver lock-enabled false
 sudo yum install zsh htop git
-yum -y install python-pip
+sudo yum -y install python-pip
+sudo yum -y install python-pip
 ```
 
 ... happy server config BUT changing the shell should be like:
@@ -163,6 +164,7 @@ sudo yum downgrade glib2 mesa-libglap libdrm mesa-libEGL mesa-libGL mesa-libgbm
 yum install alsa-lib.i686 fontconfig.i686 libgcc.i686 libstdc++.i686  qtwebkit.i686 
 
 sudo yum install skype-4.2.0.11-fedora.i586.rpm
+yum install gnome-shell-extension-SkypeNotification
 ```
 
 Edit shortcut `/usr/share/applications/skype.desktop`
