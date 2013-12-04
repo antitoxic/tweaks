@@ -1,6 +1,7 @@
 ## Goals
  - touch pad 2 finger scrolling in both horizontal and vertical
  - Have the title bar merged with the notification bar
+ - For software like terminal emulator where the menu bar is usesless but still showing -> hide it, if possible to be done via a script 
  - Hide top menu items (File, Options, Tools, Help...)
  - screenshot tool to work
  - Alt+tab drag'n'drop
@@ -29,7 +30,10 @@
  - Ease way to drag and drop files between windows
  - Shortcut to start common virtual machine (windows xp)
  - Autosave screenshots to file, easy way to make screenshots of areas of the screen
- - be able to list all files that a package installed 
+ - Easy way to list all files that installed package added
+ - The speed of Google chrome but with the clever address bar of firefox
+ - Use GTK+ themes where pos
+ - PC must support PCI passthrough (IOMMU, also called VT-p by Intel )
 
 
 ## Packages

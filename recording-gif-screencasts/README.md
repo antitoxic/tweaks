@@ -1,4 +1,5 @@
-Tested on Ubuntu 13.04 but should work on other unix platforms.
+Tested on Ubuntu 13.04 and Fedora 20 but should work on other unix platforms.
+(requires  `libx11-dev` / `libX11-devel` and `byzanz`)
 
 ## Recoding screencasts as GIF animations
 
@@ -13,7 +14,6 @@ chmod +x byzanz-record-window
 ```
 
 Satisfy the dependacies (only `xrectsel`):
-
 ```bash
 git clone https://github.com/lolilolicon/FFcast2.git ~/tmp/xrectsel
 cd ~/tmp/xrectsel
