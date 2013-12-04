@@ -15,8 +15,10 @@ dconf-editor - to visual browse availabe configuration - dont use it to change i
 https://wiki.archlinux.org/index.php/GNOME
 http://www.fandigital.com/2012/06/change-theme-command-line-gnome.html
 
+fonts go in ~/.fonts dir
+
 ```
-sudo yum remove libreoff* brasero rhythmbox shotwell simple-scan aisleriot
+sudo yum remove libreoff* brasero rhythmbox shotwell simple-scan aisleriot gnome-boxes
 ```
 
 
@@ -204,3 +206,10 @@ yum install freetype-infinality fontconfig-infinality
 general info and settings file: http://www.infinality.net/blog/infinality-freetype-patches/
 fedora install steps: http://www.infinality.net/forum/viewtopic.php?f=2&t=77
 java: http://www.infinality.net/forum/viewtopic.php?f=2&t=275
+
+## Virtualbox install
+```
+wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | rpm --import -
+cd /etc/yum.repos.d/
+sudo wget http://download.virtualbox.org/virtualbox/rpm/fedora/virtualbox.repo
+```
