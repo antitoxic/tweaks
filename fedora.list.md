@@ -213,3 +213,12 @@ wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | r
 cd /etc/yum.repos.d/
 sudo wget http://download.virtualbox.org/virtualbox/rpm/fedora/virtualbox.repo
 ```
+
+## Gnome terminal
+
+http://www.webupd8.org/2011/04/solarized-must-have-color-paletter-for.html
+http://www.if-not-true-then-false.com/2012/solarized-linux/
+
+```
+gnome-terminal-colors-solarized/set_dark.sh :b1dcc9dd-5262-4d8d-a863-c897e6d979b9
+```
