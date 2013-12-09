@@ -129,6 +129,7 @@ gsettings set org.gnome.mutter dynamic-workspaces false
 gsettings set org.gnome.desktop.wm.preferences num-workspaces 1
 gsettings set org.gnome.nautilus.preferences sort-directories-first true
 gsettings set org.gnome.Terminal.Legacy.Settings default-show-menubar false
+gsettings set oorg.gnome.desktop.lockdown disable-lock-screen true
 yum install gnome-shell-extension-user-theme
 ... download and paste themes to correct places (~/.themes, ~/.icons, ~/.local/share/themes/)
 gsettings set org.gnome.desktop.wm.preferences theme "Evolve"
@@ -222,3 +223,7 @@ http://www.if-not-true-then-false.com/2012/solarized-linux/
 ```
 gnome-terminal-colors-solarized/set_dark.sh :b1dcc9dd-5262-4d8d-a863-c897e6d979b9
 ```
+
+## Sync files between partitions, Linux, Windows
+Pcloud , PFS filesystem: 
+Notes: https://github.com/pcloudfs/pfs/issues/1
