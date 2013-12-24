@@ -31,3 +31,10 @@ bash /home/<<your-username>>/scripts/byzanz-record-region
 Now, when you press your shortcut you'll start recording. When you press the shortcut again it will stop recording.
 
 By default the screencasts are saved in `home/<<your-username>>/Pictures/gif_screencast_<<number>>`. You can change this by editing variables in the beginning of the scripts.
+
+### Looping gif endlessly
+Execute
+
+```
+gifsicle -bl ./path/to/gif/image.gif 
+```
