@@ -131,6 +131,7 @@ gsettings set org.gnome.nautilus.preferences sort-directories-first true
 gsettings set org.gnome.Terminal.Legacy.Settings default-show-menubar false
 gsettings set org.gnome.desktop.lockdown disable-lock-screen true
 gsettings set org.gnome.settings-daemon.plugins.power button-power "interactive"
+gsettings set org.gnome.shell.overrides workspaces-only-on-primary false
 yum install gnome-shell-extension-user-theme
 ... download and paste themes to correct places (~/.themes, ~/.icons, ~/.local/share/themes/)
 gsettings set org.gnome.desktop.wm.preferences theme "Evolve"
