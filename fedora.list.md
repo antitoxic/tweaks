@@ -229,3 +229,10 @@ gnome-terminal-colors-solarized/set_dark.sh :b1dcc9dd-5262-4d8d-a863-c897e6d979b
 ## Sync files between partitions, Linux, Windows
 Pcloud , PFS filesystem: 
 Notes: https://github.com/pcloudfs/pfs/issues/1
+```
+yum install fuse-devel openssl-devel
+make
+sudo make install
+```
+https://api.pcloud.com/userinfo?getauth=1&username=<email>&password=<password>
+copy auth
