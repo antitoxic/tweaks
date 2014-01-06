@@ -229,10 +229,40 @@ gnome-terminal-colors-solarized/set_dark.sh :b1dcc9dd-5262-4d8d-a863-c897e6d979b
 ## Sync files between partitions, Linux, Windows
 Pcloud , PFS filesystem: 
 Notes: https://github.com/pcloudfs/pfs/issues/1
-```
+
+```sh
 yum install fuse-devel openssl-devel
 make
 sudo make install
 ```
+
 https://api.pcloud.com/userinfo?getauth=1&username=<email>&password=<password>
 copy auth
+
+```sh
+mkdir -p ~/.config/systemd/system/
+touch ~/.config/systemd/system/pfs.service
+sublime ~/.config/systemd/system/pfs.service
+# paste:
+[Unit]
+Description=pCloud mount
+
+[Service]
+Type=oneshot
+User=ubuntu
+Group=ubuntu
+RemainAfterExit=yes
+ExecStart=/usr/bin/mount.pfs --auth uhGvtjaAde8ZGwd7ZUyAPaKV8xt4F6BM2Oh1a7QToPRM7 /run/media/ubuntu/pCloud
+ExecStop=/usr/bin/umount /run/media/ubuntu/pCloud
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Activate:
+
+
+```sh
+sudo cp /home/ubuntu/.config/systemd/system/pfs.service /usr/lib/systemd/system/
+sudo systemctl enable pfs.service
+```
