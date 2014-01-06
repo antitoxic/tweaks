@@ -252,7 +252,7 @@ Type=oneshot
 User=ubuntu
 Group=ubuntu
 RemainAfterExit=yes
-ExecStart=/usr/bin/mount.pfs --auth uhGvtjaAde8ZGwd7ZUyAPaKV8xt4F6BM2Oh1a7QToPRM7 /run/media/ubuntu/pCloud
+ExecStart=/usr/bin/mount.pfs --auth <auth> /run/media/ubuntu/pCloud
 ExecStop=/usr/bin/umount /run/media/ubuntu/pCloud
 
 [Install]
