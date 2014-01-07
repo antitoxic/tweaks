@@ -48,3 +48,12 @@
    And then Edit screenshot commands from CompizConfig Settings Manager (ccsm) > Gnome Compatibility
  - __byzanz__ + __xrectsel__ (ref: https://github.com/lolilolicon/FFcast2/tree/master) + custom scripts __byzanz-record-region__,  __byzanz-record-window__ ref: http://askubuntu.com/questions/107726/how-to-create-animated-gif-images-of-a-screencast/201018#201018
 
+## Cross-platform tips
+When using `oh-my-zsh` create a `~/.zprofile` with the contents: 
+
+```
+emulate sh
+source ~/.profile
+emulate zsh
+
+```
