@@ -1,42 +1,57 @@
 ## Goals
- - touch pad 2 finger scrolling in both horizontal and vertical
- - Have the title bar merged with the notification bar
- - For software like terminal emulator where the menu bar is usesless but still showing -> hide it, if possible to be done via a script 
- - Hide top menu items (File, Options, Tools, Help...)
- - screenshot tool to work
- - Alt+tab drag'n'drop
- - Must have "aero-snap" for at least full screen + left/right sides
- - Must support AMD video card (amd catalyst)
- - fontconfig-infinality - nice antialiasing for both native and java gui
- - Sound, Video, Skype - all working,
- - Skype notifications working properly
- - Non-recursive Filtering when typing
- - Switching monitor works nicely
+
+### Legend
+
+| Icon                      | Meaning       |
+| ------------------------- |---------------|
+| :white_check_mark: | It's there out of the box |
+| large_orange_diamond: | It's possbile but needs settings, or it's there out of the box but not working every time |
+| :red_circle: | Not there |
+
+### Comparison 
+
+Ubuntu (`unity`, `apt`, `upstart`) **VS** Fedora (`gnome3`, `yum`, `systemd`)
+
+| Goal                      | Ubuntu        | Fedora |
+| ------------------------- |---------------| ------ |
+| Touchpad 2-finger scrolling in both horizontal and vertical | :large_orange_diamond: | :white_check_mark: |
+| Have the title bar merged with the notification bar | :white_check_mark: | :large_orange_diamond: |
+| For software like terminal emulator where the menu bar is usesless but still showing -> hide it | :large_orange_diamond: | :large_orange_diamond: |
+| Hide top menu items (File, Options, Tools, Help...) | :large_orange_diamond: | :large_orange_diamond: |
+| Shutter screenshot tool to work | :white_check_mark: | :white_check_mark: |
+| Alt+tab drag'n'drop | :red_circle: | :white_check_mark: |
+| Must have "aero-snap" for at least full screen + left/right sides | :white_check_mark: | :white_check_mark: |
+| Must support AMD video card (amd catalyst) | :large_orange_diamond: | :large_orange_diamond: |
+| fontconfig-infinality - nice antialiasing for both native and java gui | :white_check_mark: | :red_circle: * (ok nearly impossible for java)* |
+| Sound, Video, Skype | :large_orange_diamond: (still crashing) | :white_check_mark: |
+| Easy, working way for skype to be integrated | :red_circle:  | :white_check_mark: |
+| Non-recursive Filtering when typing in nautilus| :red_circle: | :red_circle: |
+| Switching monitor works nicely | :large_orange_diamond: | :white_check_mark: |
+| Have 2 browser profiles, one for work, on for personal usage. Have shorcuts to open them side by side | :white_check_mark: | :large_orange_diamond:  |
+| Have a way to sync files between partitions, Linux, Windows | :white_check_mark: | :large_orange_diamond: |
+| Command line inline syntax highlighting | :large_orange_diamond: | :large_orange_diamond: |
+| Command line filtering of history by typing prefix of command | :large_orange_diamond: | :large_orange_diamond: |
+| Nice colours in terminal emulator | :large_orange_diamond: | :large_orange_diamond: |
+| Sublime + MarkdownEditing | :large_orange_diamond: | :large_orange_diamond: |
+| Easy way to launch applications which includes filtering by keyboard | :large_orange_diamond: | :white_check_mark:  |
+| Easy way to switch between applications which includes filtering by keyboard | :red_circle: | :white_check_mark: |
+| Ease way to drag and drop files between windows | :red_circle: | :white_check_mark: |
+| Shortcut to start common virtual machine (windows xp) | :large_orange_diamond: | :large_orange_diamond: |
+| Autosave screenshots to file, easy way to make screenshots of areas of the screen | :large_orange_diamond: | :large_orange_diamond: |
+| Easy way to list all files that installed package added | :large_orange_diamond: | :large_orange_diamond: |
+| Browsing the web with the speed of Google chrome but with the clever address bar of firefox |  :large_orange_diamond: |  :large_orange_diamond: |
+| PC must support PCI passthrough (IOMMU, also called VT-p by Intel ) | - | - |
+| Visual appeal | :red_circle:  | :large_orange_diamond: |
+
+## Tasks
  - set git settings, name, email
  - add appropriate private keys
  - add ssh config
- - Have 2 browser profiles, one for work, on for personal usage. Have shorcuts to open them side by side
- - Have well antialiased fonts in both native and java GUI
- - Have a way to sync files between partitions, Linux, Windows
- - Command line inline syntax highlighting
- - Command line filtering of history by typing prefix of command
- - Nice colours in terminal emulator
- - Sublime + MarkdownEditing
- - Jetbrains WebStorm
- - Jetbrains PyCharrn
- - Easy way for skype to be integrated
- - Easy way to launch applications which includes filtering by keyboard
- - Easy way to switch between applications which includes filtering by keyboard
- - Ease way to drag and drop files between windows
- - Shortcut to start common virtual machine (windows xp)
- - Autosave screenshots to file, easy way to make screenshots of areas of the screen
- - Easy way to list all files that installed package added
- - The speed of Google chrome but with the clever address bar of firefox
- - Use GTK+ themes where pos
- - PC must support PCI passthrough (IOMMU, also called VT-p by Intel )
 
 
 ## Packages
+ - Jetbrains WebStorm
+ - Jetbrains PyCharrn
  - [__4kvideodownloader__](http://www.4kdownload.com/download#videodownloader) Download youtube playlists as mp3s. Download the variant named "Ubuntu portable"
  - __zsh__ + happy server setup, ref: https://github.com/obshtestvo-meta/info/wiki/Happy-Server  & http://antitoxic.napopa.com/dev/2013/08/16/command-line-fructose-the-sugar-that-is-good-for-you.html 
  - __gnome-terminal-colors-solarized__
