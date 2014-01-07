@@ -5,7 +5,7 @@
 | Icon                      | Meaning       |
 | ------------------------- |---------------|
 | :white_check_mark: | It's there out of the box |
-| large_orange_diamond: | It's possbile but needs settings, or it's there out of the box but not working every time |
+| :large_orange_diamond: | It's possbile but needs settings, or it's there out of the box but not working every time |
 | :red_circle: | Not there |
 
 ### Comparison 
