@@ -109,7 +109,6 @@ Lang switcher notification:
 
  - https://wiki.gnome.org/Design/Apps/Calendar
  - http://erick2red.github.io/ 
- - 
 
 ## Interesting , notes
 ubuntu blog : http://iloveubuntu.net/
@@ -117,11 +116,13 @@ ubuntu blog : http://iloveubuntu.net/
 How to edit gnome shell themes?
 
 
+
+
 OS Designers: 
  - https://plus.google.com/+RedaLazri/photos
  - http://zagortenay333.deviantart.com/ 
 
-Mint & KDE, great theme:
+Mint &amp; KDE, great theme:
 http://zagortenay333.deviantart.com/art/The-KDesktop-375876178 
 
 ```
@@ -246,14 +247,15 @@ sublime ~/.config/systemd/system/pfs.service
 # paste:
 [Unit]
 Description=pCloud mount
+After=network.target
 
 [Service]
 Type=oneshot
 User=ubuntu
 Group=ubuntu
 RemainAfterExit=yes
-ExecStart=/usr/bin/mount.pfs --auth <auth> /run/media/ubuntu/pCloud
-ExecStop=/usr/bin/umount /run/media/ubuntu/pCloud
+ExecStart=/usr/bin/mount.pfs --auth <auth> /mnt/pCloud
+ExecStop=/usr/bin/umount /mnt/pCloud
 
 [Install]
 WantedBy=multi-user.target
@@ -265,4 +267,5 @@ Activate:
 ```sh
 sudo cp /home/ubuntu/.config/systemd/system/pfs.service /usr/lib/systemd/system/
 sudo systemctl enable pfs.service
+sudo systemctl enable NetworkManager-wait-online.service
 ```
