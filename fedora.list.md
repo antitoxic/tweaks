@@ -269,3 +269,20 @@ sudo cp /home/ubuntu/.config/systemd/system/pfs.service /usr/lib/systemd/system/
 sudo systemctl enable pfs.service
 sudo systemctl enable NetworkManager-wait-online.service
 ```
+
+
+## Disable SeLinux for sure
+
+Edit `sudo sublime /etc/selinux/config` and set `SELINUX=disabled`.
+
+Add `selinux=0` and the boot optons:
+```
+sudo sublime /etc/default/grub
+```
+
+and reload config:
+
+```
+sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+
+```
