@@ -209,7 +209,22 @@ yum install freetype-infinality fontconfig-infinality
 
 general info and settings file: http://www.infinality.net/blog/infinality-freetype-patches/
 fedora install steps: http://www.infinality.net/forum/viewtopic.php?f=2&t=77
-java: http://www.infinality.net/forum/viewtopic.php?f=2&t=275
+### java font antialiasing
+as per: http://www.infinality.net/forum/viewtopic.php?f=2&t=275
+
+1. download JDK source from http://openjdk.java.net/
+2. extract it 
+3. yum install libstdc++-devel cups-devel alsa-lib alsa-lib-devel 
+4. mv fontfix.patch ./jdk       
+5. unset JAVA_HOME
+6. export LANG=C
+5. patch -p1 < fontfix.patch 
+6. export ALT_BOOTDIR=/usr/lib/jvm/<current jdk dir>
+7. make all
+8. sudo make install
+
+
+
 
 ## Virtualbox install
 ```
