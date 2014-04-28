@@ -242,6 +242,12 @@ http://www.if-not-true-then-false.com/2012/solarized-linux/
 gnome-terminal-colors-solarized/set_dark.sh :b1dcc9dd-5262-4d8d-a863-c897e6d979b9
 ```
 
+## PSD thumbs and openining them in EOG 
+search for `gdk-pixbuf-psd fedora`
+find and install the rpm package.
+*that helped before:*
+http://rpm.pbone.net/index.php3/stat/4/idpl/23698788/dir//com/psd-pixbuf-loader-0.1.0-0.fc18.ikoi1.1.x86_64.rpm.html
+
 ## Sync files between partitions, Linux, Windows
 Pcloud , PFS filesystem: 
 Notes: https://github.com/pcloudfs/pfs/issues/1
