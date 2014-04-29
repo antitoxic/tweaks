@@ -321,3 +321,8 @@ XDG_VIDEOS_DIR="$HOME/"
 
 ## Disable recent files in nautilus 
 Simply open dconf-editor, navigate to org->gnome->desktop->privacy and uncheck the remember-recent-files key. That takes care 
+
+## Nautilus misc mods
+`org.gtk.Settings.FileChooser startup-mode cwd`
+`org.gtk.Settings.FileChooser sort-directories-first 1`
+
