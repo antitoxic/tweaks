@@ -307,3 +307,14 @@ and reload config:
 sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 
 ```
+
+
+## edit nautilus places
+
+Edit `~/.config/user-dirs.dirs` and change appropriate lines to match with following lines:
+
+```
+XDG_MUSIC_DIR="$HOME/"
+XDG_PICTURES_DIR="$HOME/"
+XDG_VIDEOS_DIR="$HOME/"
+```
