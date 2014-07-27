@@ -126,6 +126,7 @@ Mint &amp; KDE, great theme:
 http://zagortenay333.deviantart.com/art/The-KDesktop-375876178 
 
 ```
+gsettings set org.gnome.shell dynamic-workspaces false
 gsettings set org.gnome.mutter dynamic-workspaces false
 gsettings set org.gnome.desktop.wm.preferences num-workspaces 1
 gsettings set org.gnome.nautilus.preferences sort-directories-first true
