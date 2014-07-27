@@ -94,9 +94,7 @@ After creating this file it is necessary to rebuild the initramfs in order to ap
 sudo update-initramfs -u
 ```
 
-
-
-
+### Oh-my-zsh
 
 When using `oh-my-zsh` create a `~/.zprofile` with the contents: 
 
@@ -105,4 +103,16 @@ emulate sh
 source ~/.profile
 emulate zsh
 
+```
+
+### Virtualbox
+vbm = VBoxManage
+```
+<~> $ vbm showvminfo WinXP-SP3 | grep VRAM
+VRAM size:       128MB
+
+<~> $ vbm modifyvm WinXP-SP3 --vram 256
+
+<~> $ vbm showvminfo WinXP-SP3 | grep VRAM
+VRAM size:       256MB
 ```
