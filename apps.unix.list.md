@@ -65,6 +65,39 @@ Ubuntu (`unity`, `apt`, `upstart`) **VS** Fedora (`gnome3`, `yum`, `systemd`)
  - __byzanz__ + __xrectsel__ (ref: https://github.com/lolilolicon/FFcast2/tree/master) + custom scripts __byzanz-record-region__,  __byzanz-record-window__ ref: http://askubuntu.com/questions/107726/how-to-create-animated-gif-images-of-a-screencast/201018#201018
 
 ## Cross-platform tips
+
+Run 
+```
+sudo lshw -html > hardware.html
+```
+
+To generate specs.
+
+### Radeon related 
+```
+dmesg | grep radeon
+cat /etc/modules-load.d
+
+```
+ 0 down vote
+	
+
+Personally I dislike adding options to modules via the GRUB command line. Instead, to enable DPM with my Radeon card I created a file /etc/modprobe.d/radeon.conf with the following contents:
+
+```
+options radeon dpm=1
+```
+
+After creating this file it is necessary to rebuild the initramfs in order to apply the changes:
+
+```
+sudo update-initramfs -u
+```
+
+
+
+
+
 When using `oh-my-zsh` create a `~/.zprofile` with the contents: 
 
 ```
