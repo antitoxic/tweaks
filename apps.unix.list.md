@@ -116,3 +116,7 @@ VRAM size:       128MB
 <~> $ vbm showvminfo WinXP-SP3 | grep VRAM
 VRAM size:       256MB
 ```
+
+### Hide icons form gnom overview / application view
+
+Add `NoDisplay=true` to `.desktop` entry of the app
