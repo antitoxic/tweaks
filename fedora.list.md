@@ -327,3 +327,13 @@ Simply open dconf-editor, navigate to org->gnome->desktop->privacy and uncheck t
 `org.gtk.Settings.FileChooser startup-mode cwd`
 `org.gtk.Settings.FileChooser sort-directories-first 1`
 
+## Dev notes
+Mysql and readline Python workaround -  
+
+```
+sudo yum install mysql-devel
+sudo yum install redhat-rpm-config
+sudo yum install readline-devel
+sudo yum install ncurses-devel
+sudo yum install patch
+```
