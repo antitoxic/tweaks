@@ -337,3 +337,8 @@ sudo yum install readline-devel
 sudo yum install ncurses-devel
 sudo yum install patch
 ```
+
+Java details:
+```
+sudo yum install java-*.*.*-openjdk
+```
