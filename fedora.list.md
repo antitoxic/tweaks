@@ -22,6 +22,7 @@ sudo yum remove libreoff* brasero rhythmbox shotwell simple-scan aisleriot gnome
 ```
 
 
+
 ### Titlebar
 Maximus Extension: https://extensions.gnome.org/extension/354/maximus/ + https://bitbucket.org/mathematicalcoffee/maximus-gnome-shell-extension/issue/23/please-upgrade-to-38#comment-3581856
 __OR__ http://askubuntu.com/questions/289940/remove-title-bar-of-all-maximized-gnome-3-8-windows
@@ -241,6 +242,7 @@ http://www.if-not-true-then-false.com/2012/solarized-linux/
 gnome-terminal-colors-solarized/set_dark.sh :b1dcc9dd-5262-4d8d-a863-c897e6d979b9
 ```
 
+
 ## PSD thumbs and openining them in EOG 
 search for `gdk-pixbuf-psd fedora`
 find and install the rpm package.
@@ -322,9 +324,12 @@ XDG_VIDEOS_DIR="$HOME/"
 Simply open dconf-editor, navigate to org->gnome->desktop->privacy and uncheck the remember-recent-files key. That takes care 
 
 ## Nautilus misc mods
-`org.gtk.Settings.FileChooser startup-mode cwd`
-`org.gtk.Settings.FileChooser sort-directories-first 1`
 
+```
+sudo yum install nautilus-open-terminal
+gsettings set org.gtk.Settings.FileChooser startup-mode cwd
+gsettings set org.gtk.Settings.FileChooser show-hidden false
+```
 ## Dev notes
 Mysql and readline Python workaround -  
 
