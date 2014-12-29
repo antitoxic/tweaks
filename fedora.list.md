@@ -21,13 +21,7 @@ fonts go in ~/.fonts dir
 sudo yum remove libreoff* brasero rhythmbox shotwell simple-scan aisleriot gnome-boxes
 ```
 
-
-
 ### Titlebar
-Maximus Extension: https://extensions.gnome.org/extension/354/maximus/ + https://bitbucket.org/mathematicalcoffee/maximus-gnome-shell-extension/issue/23/please-upgrade-to-38#comment-3581856
-__OR__ http://askubuntu.com/questions/289940/remove-title-bar-of-all-maximized-gnome-3-8-windows
-__OR__ https://ask.fedoraproject.org/question/10770/remove-gnome-window-labelling-bar/
-
 Edit theme's `metacity-1/metacity-theme-3.xml`  and add to the element with attribute `name="max"`: 
 
 ```
