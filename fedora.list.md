@@ -126,10 +126,9 @@ Mint &amp; KDE, great theme:
 http://zagortenay333.deviantart.com/art/The-KDesktop-375876178 
 
 ```
-gsettings set org.gnome.shell dynamic-workspaces false
+gsettings set org.gnome.shell.overrides dynamic-workspaces false
 gsettings set org.gnome.mutter dynamic-workspaces false
 gsettings set org.gnome.desktop.wm.preferences num-workspaces 1
-gsettings set org.gnome.nautilus.preferences sort-directories-first true
 gsettings set org.gnome.Terminal.Legacy.Settings default-show-menubar false
 gsettings set org.gnome.desktop.lockdown disable-lock-screen true
 gsettings set org.gnome.settings-daemon.plugins.power button-power "interactive"
@@ -143,7 +142,6 @@ gsettings set org.gnome.desktop.interface icon-theme "Moka"
 
 gsettings set org.gnome.desktop.screensaver lock-enabled false
 sudo yum install zsh htop git
-sudo yum -y install python-pip
 sudo yum -y install python-pip
 ```
 
