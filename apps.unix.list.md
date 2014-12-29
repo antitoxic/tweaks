@@ -53,7 +53,7 @@ Ubuntu (`unity`, `apt`, `upstart`) **VS** Fedora (`gnome3`, `yum`, `systemd`)
  - Jetbrains WebStorm
  - Jetbrains PyCharrn
  - Plymouth Manager
- - [__4kvideodownloader__](http://www.4kdownload.com/download#videodownloader) Download youtube playlists as mp3s. Download the variant named "Ubuntu portable"
+ - https://github.com/np1/mps-youtube
  - __zsh__ + happy server setup, ref: https://github.com/obshtestvo-meta/info/wiki/Happy-Server  & http://antitoxic.napopa.com/dev/2013/08/16/command-line-fructose-the-sugar-that-is-good-for-you.html 
  - __gnome-terminal-colors-solarized__
  - __virtualbox__
