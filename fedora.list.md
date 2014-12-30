@@ -360,3 +360,12 @@ echo "Xft.lcdfilter: lcddefault" > ~/.Xresources
 ```
 
 http://www.infinality.net/forum/viewtopic.php?f=2&t=350&hilit=fedora&start=20
+https://github.com/bohoomil/fontconfig-ultimate
+
+```
+rpm -Uvh http://www.infinality.net/fedora/linux/infinality-repo-1.0-1.noarch.rpm
+yum install freetype-infinality fontconfig-infinality -y
+cd /etc/fonts/infinality/
+./infctl.sh setstyle ubuntu
+fc-cache -vf
+```
