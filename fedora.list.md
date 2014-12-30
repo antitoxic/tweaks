@@ -347,6 +347,7 @@ fc-cache -vf
 ```
 sudo yum remove 'plymouth*'
 sudo dracut -f
+cd /lib/systemd/system
 for i in abrt*.service fire*.service dmraid*.service bluetooth*.service avahi-daemon*.service mdmonitoring*.service;do sudo systemctl mask $i; done
 ```
 
