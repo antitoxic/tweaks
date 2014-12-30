@@ -45,8 +45,13 @@ Themes go into `~/.local/share/themes`.
 >ln -s ../../../../.themes/Evolve/metacity-1 ~/.local/share/themes/Evolve/metacity-1
 >```
 
-Themes worth mentioning: eOS, Panacea-Gray, Evolve, Numix, Zukitwo, Wisteria (too purple needs modifi.): 
- - http://gnome-look.org/content/show.php/Wisteria?content=161994
+- http://gnome-look.org/index.php?xcontentmode=167 (GTK 3.x artworks)
+- https://github.com/search?o=desc&q=gnome+theme&s=stars&type=Repositories&utf8=%E2%9C%93
+
+
+Best combinations is Vertex Shell (alghough too much details) + Vertext-alt-metacity + Flat-Plat (needs finishing touches)
+
+Themes worth mentioning: hdni's FlecheeOS, Panacea-Gray, Evolve, Numix, Zukitwo, Wisteria.
 
 ### Icons
 Icons go into `~/.icons`. Best packages have repos instead of this.
