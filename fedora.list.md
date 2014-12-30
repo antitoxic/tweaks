@@ -339,3 +339,15 @@ Java details:
 ```
 sudo yum install java-*.*.*-openjdk
 ```
+
+## Colors
+https://github.com/Anthony25/gnome-terminal-colors-solarized
+https://github.com/seebi/dircolors-solarized
+
+```
+# terminal
+install.sh
+# dir colors add the following to .zshrc:
+eval `dircolors ./<repo>/dircolors.256dark
+```
+
