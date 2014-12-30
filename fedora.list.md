@@ -344,11 +344,23 @@ fc-cache -vf
 
 ### Boot time
 
+Check:
+```
+systemd-analyze
+systemd-analyze blame
+systemd-analyze plot > plot.svg
+```
+
 ```
 sudo yum remove 'plymouth*'
 sudo dracut -f
 cd /lib/systemd/system
 for i in abrt*.service fire*.service dmraid*.service bluetooth*.service avahi-daemon*.service mdmonitoring*.service;do sudo systemctl mask $i; done
+for i in livesys livesys-late spice-vdagentd ; do sudo chkconfig $i off;done
 ```
 
 `avahi-daemon.service` - autofind devices like printers on network; if problems occur unmask it
+
+`sudo gedit /etc/default/grub` and add `libahci.ignore_sss=1 raid=noautodetect selinux=0` to boot arguments.
+`grub2-mkconfig -o /boot/grub2/grub.cfg`
+
