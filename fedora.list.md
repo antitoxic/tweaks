@@ -15,13 +15,12 @@ dconf-editor - to visual browse availabe configuration - dont use it to change i
 https://wiki.archlinux.org/index.php/GNOME
 http://www.fandigital.com/2012/06/change-theme-command-line-gnome.html
 
-fonts go in ~/.fonts dir
 
 ```
 sudo yum remove libreoff* brasero rhythmbox shotwell simple-scan aisleriot gnome-boxes
 ```
 
-### Titlebar
+### Remove titlebar when maximized
 Edit theme's `metacity-1/metacity-theme-3.xml`  and add to the element with attribute `name="max"`: 
 
 ```
@@ -34,71 +33,35 @@ Edit theme's `metacity-1/metacity-theme-3.xml`  and add to the element with attr
 
 + change or add the atrribute `has_title` to `has_title="false"`
 
-#### Firefox:
-GNOME3 | GNOME 3 theme for Firefox — Previously known as “Adwaita”
-and then besides theme go to View > Toolbars > Menu bar and untick it
-
 ### Theme
 Resources:
  - gtk-murrine-engine
  - gtk2-engines
  - Droid Sans font
 
-Extract themes to  `~/.themes/` 
+Themes go into `~/.local/share/themes`.
 
-Symlink the metacity folder (should be `metacity-1`) to  `~/.local/share/themes/` like this:
+> If that doesnt work try `~/.themes/`. Then you must symlink the metacity folder (should be `metacity-1`) to  `~/.local/share/themes/` like this:
+>
+>```
+>mkdir ~/.local/share/themes/Evolve
+>ln -s ../../../../.themes/Evolve/metacity-1 ~/.local/share/themes/Evolve/metacity-1
+>```
 
-```
-mkdir ~/.local/share/themes/Evolve
-ln -s ../../../../.themes/Evolve/metacity-1 ~/.local/share/themes/Evolve/metacity-1
-```
-
-To make fullscreen titlebar disappear edit theme's ``
-
-eOS
- - http://gnome-look.org/content/show.php/eOS+Gnome-Shell?content=160827
- - http://www.deviantart.com/art/eOS-Gnome-Shell-402527960
-
-Panacea-Gray
- - http://www.deviantart.com/art/Gnome-Shell-3-8-Panacea-Mist-Suite-376762574
-
-Evolve: 
- - http://gnome-look.org/content/show.php/Evolve?content=146987
-
-Numix (current in ubuntu): 
- - http://gnome-look.org/content/show.php/Numix?content=160205
-
-Zukitwo: 
- - http://www.deviantart.com/art/Zukitwo-Cinnamon-412785175
- - http://gnome-look.org/content/show.php/Zukitwo?content=140562
-
-Wisteria (too purple needs modifi.): 
+Themes worth mentioning: eOS, Panacea-Gray, Evolve, Numix, Zukitwo, Wisteria (too purple needs modifi.): 
  - http://gnome-look.org/content/show.php/Wisteria?content=161994
 
 ### Icons
-~/.icons
-moka icon theme! 
- - http://gnome-look.org/content/show.php/Moka+Icon+Theme?content=160164
+Icons go into `~/.icons`. Best packages have repos instead of this.
 
-faenza: 
- - http://tiheum.deviantart.com/art/Faenza-Icons-173323228
+Best one: http://mokaproject.com/moka-icon-theme/
 
-flatter:
-- http://deviantn7k1.deviantart.com/art/Flattr-376383397 
-- http://nitrux.weebly.com/
-
+Others worth mentioning: faenza, flatter
 
 ### Extra Extensions
 
 User Theme:
  - https://extensions.gnome.org/extension/19/user-themes/
-
-Lang switcher notification: 
- - https://extensions.gnome.org/static/extension-data/screenshots/screenshot_733_1.png 
-
-
-
-
 
 ### Calendar
 
@@ -353,13 +316,18 @@ eval `dircolors ./<repo>/dircolors.256dark
 
 ## Fonts
 
+Fonts go in `~/.fonts`.
+
 ```
 gsettings set org.gnome.settings-daemon.plugins.xsettings antialiasing rgba
 gsettings set org.gnome.settings-daemon.plugins.xsettings hinting slight
 echo "Xft.lcdfilter: lcddefault" > ~/.Xresources
 ```
 
+### Infinality fixes
+
 http://www.infinality.net/forum/viewtopic.php?f=2&t=350&hilit=fedora&start=20
+http://www.infinality.net/fedora/linux/
 https://github.com/bohoomil/fontconfig-ultimate
 
 ```
