@@ -7,18 +7,20 @@ They are responsible for native gtk applications settings. Dont need to install 
 `gsettings` and `dconf-editor ` go together. Not this is __d__conf , not __g__conf. bloody hell.
 it's responsible for more system-like, shell settings.
 
-#### quick dirty notes
+#### quick notes
 https://help.gnome.org/misc/release-notes/3.10/
+
+```
 gnome-shell --version
 gnome-tweak-tool
-dconf-editor - to visual browse availabe configuration - dont use it to change it! use gsettings command
-https://wiki.archlinux.org/index.php/GNOME
-http://www.fandigital.com/2012/06/change-theme-command-line-gnome.html
-
-
-```
+dconf-editor # to visual browse availabe configuration - dont use it to change it! use gsettings command
 sudo yum remove libreoff* brasero rhythmbox shotwell simple-scan aisleriot gnome-boxes
 ```
+
+#### good searches:
+- "infinality" in fedora Q&A: https://ask.fedoraproject.org/en/questions/scope:all/sort:activity-desc/page:1/query:infinality/
+- "fedora" in infinality forums: http://www.infinality.net/forum/search.php?st=0&sk=t&sd=d&sr=posts&keywords=fedora
+
 
 ### Remove titlebar when maximized
 Edit theme's `metacity-1/metacity-theme-3.xml`  and add to the element with attribute `name="max"`: 
@@ -34,11 +36,6 @@ Edit theme's `metacity-1/metacity-theme-3.xml`  and add to the element with attr
 + change or add the atrribute `has_title` to `has_title="false"`
 
 ### Theme
-Resources:
- - gtk-murrine-engine
- - gtk2-engines
- - Droid Sans font
-
 Themes go into `~/.local/share/themes`.
 
 > If that doesnt work try `~/.themes/`. Then you must symlink the metacity folder (should be `metacity-1`) to  `~/.local/share/themes/` like this:
@@ -329,6 +326,7 @@ UPDATED: http://www.infinality.net/forum/viewtopic.php?f=2&t=77
 
 http://www.infinality.net/forum/viewtopic.php?f=2&t=350&hilit=fedora&start=20
 http://www.infinality.net/fedora/linux/
+https://copr.fedoraproject.org/coprs/hadrons123/infinality-testing/
 https://github.com/bohoomil/fontconfig-ultimate
 
 ```
