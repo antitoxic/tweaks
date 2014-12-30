@@ -358,3 +358,5 @@ gsettings set org.gnome.settings-daemon.plugins.xsettings antialiasing rgba
 gsettings set org.gnome.settings-daemon.plugins.xsettings hinting slight
 echo "Xft.lcdfilter: lcddefault" > ~/.Xresources
 ```
+
+http://www.infinality.net/forum/viewtopic.php?f=2&t=350&hilit=fedora&start=20
