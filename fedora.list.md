@@ -341,3 +341,13 @@ cd /etc/fonts/infinality/
 ./infctl.sh setstyle ubuntu
 fc-cache -vf
 ```
+
+### Boot time
+
+```
+sudo yum remove 'plymouth*'
+sudo dracut -f
+for i in abrt*.service fire*.service dmraid*.service bluetooth*.service avahi-daemon*.service;do sudo systemctl mask $i; done
+```
+
+`avahi-daemon.service` - autofind devices like printers on network; if problems occur unmask it
