@@ -325,6 +325,7 @@ echo "Xft.lcdfilter: lcddefault" > ~/.Xresources
 ```
 
 ### Infinality fixes
+UPDATED: http://www.infinality.net/forum/viewtopic.php?f=2&t=77
 
 http://www.infinality.net/forum/viewtopic.php?f=2&t=350&hilit=fedora&start=20
 http://www.infinality.net/fedora/linux/
