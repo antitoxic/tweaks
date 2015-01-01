@@ -368,3 +368,5 @@ for i in livesys livesys-late spice-vdagentd ; do sudo chkconfig $i off;done
 
 Check progress on the topic:
  - https://sourceforge.net/p/easystroke/feature-requests/39/
+ - mtrack + easystrok http://askubuntu.com/questions/217889/multitouch-gestures/224761#224761
+ - https://code.google.com/p/touchegg/
