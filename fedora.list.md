@@ -364,3 +364,7 @@ for i in livesys livesys-late spice-vdagentd ; do sudo chkconfig $i off;done
 `sudo gedit /etc/default/grub` and add `libahci.ignore_sss=1 raid=noautodetect selinux=0` to boot arguments.
 `grub2-mkconfig -o /boot/grub2/grub.cfg`
 
+## Gestures
+
+Check progress on the topic:
+ - https://sourceforge.net/p/easystroke/feature-requests/39/
