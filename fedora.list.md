@@ -116,6 +116,8 @@ And add `yum` and `systemd` to plugins so... :
 sed -i.bak 's/^plugins=(.*/plugins=(git sudo django python pip virtualenvwrapper emoji-clock zsh-syntax-highlighting bower yum systemd colorize)/' ~/.zshrc
 ```
 
+Install `pwgen` to generate memorable passwords 
+
 
 Skype
 ```
@@ -414,3 +416,4 @@ Example conents of app folder apps:
 - `rpm -ql atom <packagename>` - lists all files of a package
 - `yum/dnf list "*part of name*"` - lists all packages matching pattern
 - `yum/dnf list installed "*part of name*"` - lists all installed packages matching pattern
+- `pwgen 16` - generate secure memorable passwords
