@@ -400,6 +400,15 @@ gsettings set org.gnome.desktop.app-folders folder-children "['Utilities', 'Anal
 # then use dconf to edit `apps` entry for each folder
 ```
 
+Example conents of app folder apps:
+
+- **Analysis**: `['xfce4-taskmanager.desktop', 'setroubleshoot.desktop', 'yelp.desktop', 'cockpit.desktop', 'gnome-disks.desktop', 'gnome-abrt.desktop', 'org.gnome.baobab.desktop', 'gnome-system-log.desktop', 'gnome-system-monitor.desktop']`
+- **Common**: `['transmission-gtk.desktop', 'gnome-calculator.desktop', 'firefox.desktop', 'rhythmbox.desktop', 'skype.desktop', 'eog.desktop',  'evince.desktop', 'google-chrome.desktop']`
+- **Development**: `['gnome-terminal.desktop', 'atom.desktop', 'org.gnome.gedit.desktop', 'devassistant.desktop', 'org.gnome.Boxes.desktop', 'java-1.8.0-openjdk-1.8.0.25-5.b18.fc21.x86_64-policytool.desktop', 'jetbrains-pycharm.desktop']`
+- **Preferences**: `['gnome-control-center.desktop', 'fedy.desktop', 'easystroke.desktop', 'yad-icon-browser.desktop', 'org.gnome.Software.desktop', 'gnome-tweak-tool.desktop']
+- **Rarely used/Unclassified** `['evolution.desktop', 'org.gnome.Contacts.desktop', 'nm-connection-editor.desktop', 'ibus-setup-libbopomofo.desktop', 'im-chooser.desktop', 'system-config-language.desktop', 'javaws.desktop', 'firewall-config.desktop', 'ibus-setup-anthy.desktop', 'ibus-setup-m17n.desktop', 'system-config-firewall.desktop', 'jhbuild.desktop', 'itweb-settings.desktop', 'authconfig.desktop', 'gnome-power-statistics.desktop', 'fedora-release-notes.desktop', 'system-config-printer.desktop', 'ibus-setup-libpinyin.desktop', 'system-config-date.desktop', 'ibus-setup-typing-booster.desktop', 'log4j-logfactor5.desktop', 'alacarte.desktop', 'java-1.7.0-openjdk-policytool.desktop', 'log4j-chainsaw.desktop', 'ibus-setup-hangul.desktop', 'system-config-keyboard.desktop', 'ibus-setup.desktop', 'java-1.7.0-openjdk-jconsole.desktop', 'orca.desktop', 'vino-preferences.desktop']`
+- - **Utilities** `['deja-dup-preferences.desktop', 'org.gnome.FileRoller.desktop', 'vinagre.desktop',  'gucharmap.desktop', 'org.gnome.Screenshot.desktop',  'org.gnome.font-viewer.desktop', 'gnome-dictionary.desktop', 'seahorse.desktop','org.gnome.Documents.desktop']`
+
 ## Useful command reference
 
 - `rpm -ql atom <packagename>` - lists all files of a package
