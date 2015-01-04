@@ -372,3 +372,35 @@ Check progress on the topic:
  - https://code.google.com/p/touchegg/
  - https://github.com/BlueDragonX/xf86-input-mtrack
  - http://www.evilcodingmonkey.com/2014/01/23/ubuntu-activate-multi-touch-on-elantech/
+
+## Main menu
+To hide icon add `NoDisplay=true` to .desktop entry of the app.
+
+3 possible places for icons:
+1. `~/.local/share/applications/`
+1. `/usr/share/applications/`
+1. `/usr/local/share/applications/atom.desktop` (should not be used but some apps use it and it works)
+
+To find the name of the `.desktop` file of application do:
+
+```
+grep -rl '<name of app>' /usr/share/applications/*
+```
+and try other locaitons if it doesnt show up.
+
+To see what apps go in what folder run something like this for `Utilities` folder:
+```
+gsettings get org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Utilities/ apps
+```
+
+http://blogs.gnome.org/mclasen/2014/03/17/app-folder-configuration/
+```
+gsettings set org.gnome.desktop.app-folders folder-children "['Utilities', 'Analysis', 'Sundry', 'Settings', 'Development', 'Common']"
+# add a new app folder via "Select mode" via software app
+# then use dconf to edit `apps` entry for each folder
+```
+
+## Useful command reference
+
+- `rpm -ql atom <packagename>` - lists all files of a package
+- 
