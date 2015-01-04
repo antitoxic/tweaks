@@ -416,4 +416,4 @@ Example conents of app folder apps:
 - `rpm -ql atom <packagename>` - lists all files of a package
 - `yum/dnf list "*part of name*"` - lists all packages matching pattern
 - `yum/dnf list installed "*part of name*"` - lists all installed packages matching pattern
-- `pwgen 16` - generate secure memorable passwords
+- `pwgen -1 16` - generate one secure memorable password
