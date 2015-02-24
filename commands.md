@@ -4,3 +4,4 @@
 - copy from remote to local: `scp [-P <PORT NUMBER>] user@host:/some/remote/dir/archive.tar.gz ./local/dir/`
 - create python virtual env in current dir: `virtualenv -p /usr/bin/python[3] .virtualenv`
 - activate python virtualenv: `source path/to/.virtualenv/bin/activate`
+- change home directory or shell for user: `vim /etc/passwd`
