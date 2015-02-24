@@ -2,3 +2,4 @@
 - zip dir: `tar -zcvf archive.tar.gz /home/user/datadir`
 - copy from local to remote: `scp [-P <PORT NUMBER>] ./archive.tar.gz user@host:/some/remote/dir/`
 - copy from remote to local: `scp [-P <PORT NUMBER>] user@host:/some/remote/dir/archive.tar.gz ./local/dir/`
+- create python virtual env in current dir: `virtualenv -p /usr/bin/python[3] .virtualenv`
