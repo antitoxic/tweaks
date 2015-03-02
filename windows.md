@@ -41,3 +41,23 @@ Install package manager: [chocolatey](https://chocolatey.org/).
 
 *rundll32 High cpu*: (as admin) `schtasks /change /TN "\Microsoft\windows\application Experience\ProgramDataUpdater" /DISABLE`
 
+Remove Homegroup from windows explorer sidebar in 64-bit Windows
+```batch
+[HKEY_CLASSES_ROOT\CLSID\{B4FB3F98-C1EA-428d-A78A-D1F5659CBA93}]
+"System.IsPinnedToNameSpaceTree"=dword:00000000
+
+[HKEY_CLASSES_ROOT\CLSID\{B4FB3F98-C1EA-428d-A78A-D1F5659CBA93}\ShellFolder]
+"Attributes"=dword:b094010c
+
+[HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{B4FB3F98-C1EA-428d-A78A-D1F5659CBA93}]
+"System.IsPinnedToNameSpaceTree"=dword:00000000
+
+[HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{B4FB3F98-C1EA-428d-A78A-D1F5659CBA93}\ShellFolder]
+"Attributes"=dword:b094010c
+
+[HKEY_CURRENT_USER\Software\Classes\CLSID\{B4FB3F98-C1EA-428d-A78A-D1F5659CBA93}]
+"System.IsPinnedToNameSpaceTree"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Classes\Wow6432Node\CLSID\{B4FB3F98-C1EA-428d-A78A-D1F5659CBA93}]
+"System.IsPinnedToNameSpaceTree"=dword:00000000
+```
