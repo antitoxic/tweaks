@@ -7,17 +7,14 @@ Install package manager: [chocolatey](https://chocolatey.org/).
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <packages>
-  <package id="pdfcreator" />
-  <package id="screentogif" />
+  <package id="sublimetext3" />
   <package id="vlc" />
   <package id="conemu" />
-  <package id="utorrent" />
   <package id="launchy" />
   <package id="sumatrapdf" />
   <package id="lockhunter" />
   <package id="githubforwindows" />
   <package id="ack" />
-  <package id="sublimetext3" />
   <package id="wincdemu" />
   <package id="pandoc" />
   <package id="cyberduck" />
@@ -25,16 +22,22 @@ Install package manager: [chocolatey](https://chocolatey.org/).
   <package id="procexp" />
   <package id="procmon" />
   <package id="processhacker" />
-  <package id="makemkv" />
   <package id="javaruntime" />
   <package id="youtube-dl" />
+  <package id="cwrsync" />
+  <package id="utorrent" />
+  <package id="pnggauntlet" />
+  <package id="screentogif" >/
   <package id="webstorm" />
   <package id="autohotkey.portable" />
   <package id="googledrive" />
-  <package id="pnggauntlet" />
-  <package id="cwrsync" />
   <package id="virtualbox" />
   <package id="vagrant" />
   <package id="puppet" />
+  <package id="makemkv" />
+  <package id="pdfcreator" />
 </packages>
 ```
+
+*rundll32 High cpu*: (as admin) `schtasks /change /TN "\Microsoft\windows\application Experience\ProgramDataUpdater" /DISABLE`
+
