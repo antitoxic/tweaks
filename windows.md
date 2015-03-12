@@ -61,3 +61,19 @@ Remove Homegroup from windows explorer sidebar in 64-bit Windows
 [HKEY_CURRENT_USER\Software\Classes\Wow6432Node\CLSID\{B4FB3F98-C1EA-428d-A78A-D1F5659CBA93}]
 "System.IsPinnedToNameSpaceTree"=dword:00000000
 ```
+
+
+# Parent PC
+
+## my documents custom directory windows 8
+- http://windows.microsoft.com/en-us/windows/redirect-folder-new-location#1TC=windows-7
+
+## Custom folders on Explorer home page
+- http://superuser.com/questions/665756/customizing-windows-8s-windows-explorers-sidebar
+
+## Remove network from sidebar
+- http://www.eightforums.com/tutorials/8636-network-add-remove-navigation-pane-windows-8-explorer.html
+
+## Remove homegroup from sidebar
+- http://www.eightforums.com/tutorials/38685-homegroup-add-remove-navigation-pane-windows-8-a.html
+- http://www.askvg.com/how-to-remove-homegroup-from-windows-7-explorers-navigation-pane/
