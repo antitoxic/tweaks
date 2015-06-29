@@ -77,3 +77,14 @@ Remove Homegroup from windows explorer sidebar in 64-bit Windows
 ## Remove homegroup from sidebar
 - http://www.eightforums.com/tutorials/38685-homegroup-add-remove-navigation-pane-windows-8-a.html
 - http://www.askvg.com/how-to-remove-homegroup-from-windows-7-explorers-navigation-pane/
+
+
+# Settings
+
+## Virtualbox default close settings
+
+```
+"C:\Program Files\Oracle\VirtualBox\VBoxManage.exe" setextradata "VM NAME" GUI/DefaultCloseAction Shutdown
+```
+
+Other options: ` SaveState, PowerOff, or PowerOffRestoringSnapshot`. Solution found via https://forums.virtualbox.org/viewtopic.php?f=6&t=53684#p285540
